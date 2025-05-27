@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader-circle"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button class="close-btn" id="closeBtn">&times;</button>
+            </div>
+            <div class="nav-right">
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated-text">
+                    Hi, I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </h1>
+                <h2 class="animated-text delay-1">Web Developer</h2>
+                <p class="animated-text delay-2">I create beautiful, responsive websites that help businesses grow
+                    online. Let's build something amazing together!</p>
+                <button class="btn animated-text delay-3">Contact Me</button>
+
+                <div class="social-icons animated-text delay-4">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero.png" alt="Profile Photo" class="profile-photo">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>I'm a passionate web developer with expertise in creating modern, responsive websites and web
+                        applications. With 5 years of experience in the industry, I've helped numerous clients establish
+                        their online presence.</p>
+                    <p>My approach combines technical excellence with creative design to deliver solutions that are both
+                        functional and visually appealing.</p>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Spring Boot</span>
+                            <span>Laravel</span>
+                            <span>UI/UX Design</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/hero.png" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/projet1.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully responsive online store with shopping cart functionality.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/projet2.webp" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Portfolio Template</h3>
+                        <p>A customizable portfolio template for creative professionals.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/projet3.jpg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A productivity app for organizing and tracking daily tasks.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+                    <div class="contact-social">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="email" placeholder=" " required>
+                        <label for="name">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder=" " required>
+                        <label for="name">Your Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="message" placeholder=" " required>
+                        <label for="name">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <div class="scroll-progress"></div>
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
+</html>
